@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理</title>
+	<link rel="stylesheet" href="{$Think.const.CSS_URL}/style.css">
+	<script type="text/javascript" src="{$Think.const.JS_URL}/mouse.js"></script>
+</head>
+<body>
+	<div id="body">
+		<div id="header">
+			<p id="head">
+				<a href="#">{$name},欢迎你</a>
+				<a href="outlogin">退出</a>
+			</p>
+		</div>
+		<volist name="goods" id="gd">
+			<div class="goods">
+				<a href="delete?id={$gd.id}" class="cha">&times;</a>
+				<a href="upload?id={$gd.id}"><img src="{$Think.const.PIC_URL}/{$gd.time|date="Y-m-d",###}/{$gd.id}.png" alt="暂无图片  点击上传" class="gd_pic"></a>
+				<p><a href="#">{$gd.gd_name}</a></p>
+				<p>
+					<a href="#">总数:{$gd.gd_sum}</a>
+					<a href="#">剩余:{$gd.gd_remain}</a>
+				</p>
+			</div>
+        </volist>
+		
+		<div class="goods">
+			<p>添加奖品</p>
+			<form action="addGoods" method="post" enctype="multipart/form-data">
+				<span>名称：</span><br>
+				<input type='text' name='gd_name'><br>
+				<span>总数：</span>
+				<input type='text' name='gd_sum'><br>
+				<span>上传图片:</span><br>
+				<input type="file" name='myFile' id="file" />
+				<input type='submit' value='提交' id="submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

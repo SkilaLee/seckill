@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+p {
+	text-align: center;
+}
+#header {
+	width: 1150px;
+    height: 52px;
+}
+#head {
+	float: right;
+}
+#body {
+  	width: 1150px;
+  	height: 100px;
+  	margin-left: 138px;
+}
+.goods {
+	width: 200px;
+	height: 283px;
+	float: left;
+	margin-right: 30px;
+	margin-top: 50px;
+}
+.cha {
+	float: right;
+	position: relative;
+	right: 16px;
+	background: #FCF7FC;
+	display: none;
+}
+.gd_pic {
+	width: 170px;
+	height: 170px;
+	margin-left: 14px;
+}
+#file {
+	margin-top: 30px;
+}
+#submit {
+    margin-top: 29px;
+    margin-left: 132px;
+}
+form {
+	margin-left: 14px;
+}

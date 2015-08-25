@@ -1,0 +1,1 @@
+a:8:{i:0;s:2:"id";i:1;s:8:"mgr_name";i:2;s:7:"gd_name";i:3;s:6:"gd_pic";i:4;s:6:"gd_sum";i:5;s:9:"gd_remain";s:3:"_pk";s:2:"id";s:5:"_type";a:6:{s:2:"id";s:7:"int(11)";s:8:"mgr_name";s:12:"varchar(255)";s:7:"gd_name";s:12:"varchar(255)";s:6:"gd_pic";s:12:"varchar(255)";s:6:"gd_sum";s:8:"int(255)";s:9:"gd_remain";s:8:"int(255)";}}

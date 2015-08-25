@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>秒杀抽奖</title>
+	<link rel="stylesheet" href="{$Think.const.CSS_URL}/style.css">
+	<link rel="stylesheet" href="{$Think.const.CSS_URL}/index_style.css">
+	<script type="text/javascript" src="{$Think.const.JS_URL}/sec_kill.js"></script>
+</head>
+<body>
+	<div id="nav">
+		
+	</div>
+	<div id="body">
+		<div id="header">
+			<p id="head">
+				{$header}
+			</p>
+		</div>
+		<volist name="goods" id="gd">
+			<div class="goods">
+				<a href="#"><img src="{$Think.const.PIC_URL}/{$gd.time|date="Y-m-d",###}/{$gd.id}.png" alt="暂无图片" class="gd_pic"></a>
+				<p><a href="#">{$gd.gd_name}</a></p>
+				<p>
+					<a href="#">总数:{$gd.gd_sum}</a>
+					<a href="#">剩余:{$gd.gd_remain}</a>
+				</p><div class="gd_id" style="display:none;">{$gd.id}</div>
+				
+				<p class="seckill">秒杀</p>
+				
+			</div>
+        </volist>
+	</div>
+</body>
+</html>
